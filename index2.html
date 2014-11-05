@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        angular.module('talinsapp', []).controller('TalinsController', function($scope) {
+            $scope.data = ['Talin', 'Ray', 'Edwin', 'Tin Hon'];
+        });
+
+    </script>
+    <title></title>
+</head>
+<body>
+    <div ng-app="talinsapp">
+        <div ng-controller="TalinsController">
+            <ul>
+                <li ng-repeat="name in data">
+                    {{ name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

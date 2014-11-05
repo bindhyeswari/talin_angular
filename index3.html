@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        angular.module('talinsapp', []).controller('TalinsController', function ($scope) {
+            $scope.message  ='Hello World from Talin!';
+        });
+    </script>
+</head>
+<body>
+    <div ng-app="talinsapp">
+        <div ng-controller="TalinsController">
+            <input type="text" ng-model="message"/>
+            <div>
+                {{ message }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

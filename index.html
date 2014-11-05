@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        var talinsapp = angular.module('talinsapp', []);
+        talinsapp.controller('TalinsController', function ($scope) {
+            $scope.message = 'Hello World from Talin';
+        });
+    </script>
+</head>
+<body>
+    <div ng-app="talinsapp">
+        <div ng-controller="TalinsController">
+            {{ message }}
+        </div>
+    </div>
+</body>
+</html>
